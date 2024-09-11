@@ -8,7 +8,7 @@ import {Object, Property} from 'fabric-contract-api';
 export class Document {
     //関連する文書や証拠のID
     @Property()
-    public id?: string;
+    public id: string = "";
 
     //文書の種類
     @Property()

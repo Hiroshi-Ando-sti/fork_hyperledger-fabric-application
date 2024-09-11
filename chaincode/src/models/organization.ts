@@ -8,7 +8,7 @@ import {Object, Property} from 'fabric-contract-api';
 export class Organization {
     //組織ID
     @Property()
-    public id?: string;
+    public id: string = "";
 
     //登録日時
     @Property()

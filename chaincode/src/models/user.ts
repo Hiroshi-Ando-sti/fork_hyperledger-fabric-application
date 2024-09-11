@@ -8,11 +8,15 @@ import {Object, Property} from 'fabric-contract-api';
 export class User {
     //ユーザID
     @Property()
-    public id?: string;
+    public id: string = "";
+
+    //組織ID
+    @Property()
+    public organization_id: string = "";
 
     //登録日時
     @Property()
-    public created_at?: string;
+    public created_at: string = "";
 
     //ユーザタイプ（例: オペレータ、検査官、管理者など）
     @Property()

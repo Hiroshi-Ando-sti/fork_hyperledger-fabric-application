@@ -6,7 +6,7 @@ import { Part } from 'src/domain/part/part';
 @Injectable()
 export class PartRepository {
   private readonly channelName = 'mychannel';
-  private readonly chaincodeName = 'testbasic04';
+  private readonly chaincodeName = 'basic';
   private contract: Contract;
   private utf8Decoder = new TextDecoder();
 

@@ -3,12 +3,13 @@
 */
 
 import {Object, Property} from 'fabric-contract-api';
+import {TransactionAssetDetail} from './transactionAssetDetail';
 
 @Object()
 export class Transaction {
   //トランザクションの一意のID
     @Property()
-    public id?: string;
+    public id: string = "";
 
     //トランザクションのタイプ（例: 出荷、受領、保管など）
     @Property()
@@ -24,9 +25,12 @@ export class Transaction {
 
     //ステップを実行したユーザID
     @Property()
-    public user_id?: number;
+    public user_id?: string;
 
     //トランザクションのステータス（例: 完了、保留など）
     @Property()
     public status?: string;
+
+    //製品または部品情報
+    public transaction_asset_details?: TransactionAssetDetail[];
 }

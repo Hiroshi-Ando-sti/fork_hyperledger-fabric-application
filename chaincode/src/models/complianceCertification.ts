@@ -8,7 +8,7 @@ import {Object, Property} from 'fabric-contract-api';
 export class ComplianceCertification {
     //コンプライアンス認証の一意のID
     @Property()
-    public id?: string;
+    public id: string = "";
 
     //認証のタイプ
     @Property()

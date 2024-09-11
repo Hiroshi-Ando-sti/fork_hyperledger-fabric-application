@@ -6,13 +6,13 @@ import {Object, Property} from 'fabric-contract-api';
 
 @Object()
 export class Asset {
-    //id
+    //ID
     @Property()
-    public id?: string;
+    public id: string = "";
     
     //名前
     @Property()
-    public name?: string;
+    public name: string = "";
 
     //ロット番号
     @Property()
